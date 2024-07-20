@@ -1,0 +1,63 @@
+.first-page{
+    width: 1830px;
+    height: 80vh;
+    background-image: url("assets/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(7px);
+}
+
+.border{
+    width: fit-content;
+    height: fit-content;
+    border: 3px solid;
+}
+
+.title{
+    font-family: Arial;
+    position: absolute;
+    font-size: 100px;
+    color: white;
+    animation: scroll-animation ease-out 2s; 
+}
+
+#Good-Food{
+    top: 250px;
+    left: 1300px;
+}
+
+#resturant{
+    top: 350px;
+    left: 1360px;
+    border-bottom: 10px solid;
+    border-color: yellow;
+    border-radius: 5px;
+}
+
+.description{
+    opacity: 0;
+    position: absolute;
+    font-family: Arial;
+    font-size: 25px;
+    top: 540px;
+    left: 1450px;
+    color: white;
+    animation: scroll-animation ease-out 2s ;
+    animation-delay: 1.75s; 
+    animation-fill-mode: forwards;
+}
+
+@keyframes scroll-animation{
+    0% {
+        opacity: 0;
+        left: 50%;
+    }
+
+    90%{
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

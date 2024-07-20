@@ -1,0 +1,102 @@
+.Item-card{
+    width: 1000px;
+    height: 225px;
+    border: 2px solid;
+    overflow: hidden;
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px;
+    margin: 10px;
+    margin-bottom: 50px;
+    animation: scroll-animation linear;
+    animation-timeline: view();
+    animation-range: entry 0; 
+}
+
+@keyframes scroll-animation{
+    0% {
+        opacity: 0;
+        scale: 0.5;
+    }
+
+    90%{
+        opacity: 0.8;
+        scale: 0.8;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.Item-image{
+    max-width: 200px;
+    width:fit-content;
+    border-radius: 50%;
+    margin: 10px;
+    border: 1px solid;
+}
+
+.Item-name{
+    font-family: "Playwrite HR", cursive;
+    margin: 0;
+    width:fit-content;
+    height: fit-content;
+    margin: 15px;
+    margin-left: 5em;
+}
+
+.Item-description{
+    font-family: "Playwrite HR", cursive;
+    margin: 0;
+    width: fit-content;
+    height: fit-content;
+    align-self: flex-end;
+    margin: 15px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-size: 12px;
+}
+
+.Item-price{
+    margin: 10px;
+    font-size: 15px;
+    width: fit-content;
+}
+
+.Item-quantity{
+    display: flex;
+    justify-content: end;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 650px;
+    margin-bottom: 20px;
+}
+
+.button{
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    border-radius: 5px;
+    transition: 0.3s
+}
+
+.button:hover{
+    background-color: black;
+    color: white;
+}
+
+.quantity{
+    width: 15px;
+    height: 16px;
+    margin: 0;
+    border: 2px solid;
+    text-align: center;
+    padding: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+    border-radius: 5px;
+}
+
